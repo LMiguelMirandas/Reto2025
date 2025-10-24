@@ -1,0 +1,156 @@
+[
+  {
+    "description": "     Feature Login page para verificar los escenarios de prueba login.",
+    "elements": [
+      {
+        "description": "",
+        "id": "login;validacion-de-login",
+        "keyword": "Scenario Outline",
+        "line": 11,
+        "name": "Validacion de login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Ingresa a bowser web",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Ingresar usuario standard_user, contraseña secret_sauce, y clicks en boton login",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verificacion de ingreso a web",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;validacion-de-login",
+        "keyword": "Scenario Outline",
+        "line": 12,
+        "name": "Validacion de login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Ingresa a bowser web",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Ingresar usuario locked_out_user, contraseña secret_sauce, y clicks en boton login",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verificacion de ingreso a web",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;realizar-compra",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Realizar compra",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "Ingresa a bowser web",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "Ingresar usuario 'standard_user', contraseña 'secret_sauce', y clicks en boton login",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "Verificacion de ingreso a web",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 18,
+            "name": "Seleccionar productos y agregarlos al carrito",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "Verificar productos en el carrito",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "login",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login",
+    "tags": [],
+    "uri": "src\\tests\\features\\login.feature"
+  }
+]
