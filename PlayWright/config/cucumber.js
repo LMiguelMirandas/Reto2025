@@ -15,7 +15,7 @@ module.exports ={
             snippetInterface: "async-await"
         },
         require: [
-            "src/tests/step-definitions/*.ts"
+            "src/tests/step-definition/*.ts"
         ],
         requireModule: [
             "ts-node/register"
