@@ -3,6 +3,7 @@ module.exports ={
         paths: [
             "src/tests/features"
         ], 
+        parallel: 0,
         dryRun: false,
         format: [
             "progress-bar",

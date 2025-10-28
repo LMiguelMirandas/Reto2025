@@ -10,9 +10,9 @@ export class LoginPage {
 constructor(page: Page) {
     this.page = page;
 
-     this.username = page.locator("[data-test='username']");
-     this.password = page.locator("[data-test='password']");
-     this.loginButton= page.locator("[data-test='login-button']");
+     this.username = page.locator("input[data-test='username']");
+     this.password = page.locator("input[data-test='password']");
+     this.loginButton= page.locator("#login-button");
 }
 
 
@@ -28,7 +28,6 @@ async login(): Promise<void> {
             await this.page.goto('https://www.saucedemo.com/');
         
             // Verificar que la URL cambie después del login
-          //  await this.page.waitForURL('https://web.bancoripley.cl/home?', { timeout: TiempoEspera.alto });
             console.log('✅ Inicio de sesión completado.');
         } catch (error) {
             console.error(`❌ Error durante el inicio de sesión: `);
@@ -70,14 +69,21 @@ async login(): Promise<void> {
             // Verificar y hacer clic en el botón de login
     async clickBotonLogin () {
         try { 
-            if (await this. loginButton.isChecked()) {
-                console.log('🔹 Haciendo clic en el botón de login...');
-                await this.loginButton.click({force:true});
-            } else {
-                throw new Error('El botón de login no está disponible.');
-            }
+            console.log('🔹 Click en login iniciado.');
+        
+            await this.loginButton.waitFor({ state: 'visible' });
+            {
+        -    await this.loginButton.waitFor({ state: 'visible' });
+        await this.page.waitForTimeout(500);   
+         await this.loginButton.click();
+        +    // Espera a que la app termine de navegar/cargar después del login.
+        +    // Si conoces la URL o un selector que aparece tras el login, usa waitForURL o waitForSelector en lugar de networkidle.
+        +    await this.page.waitForLoadState('networkidle');
+         console.log('🔹 Click en login realizado y navegación completada.');
+        
+             } 
         } catch (error) {
-            console.error(`❌ Error al verificar el inicio de sesión:`);
+            console.error(`❌ Error al ingresar en botón de inicio de sesión:`);
             throw error;
         }
     }

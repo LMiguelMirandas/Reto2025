@@ -16,7 +16,7 @@ Given('Ingresa a bowser web', async function ()  {
   await loginPage.login();
 });
 
-When('Ingresar usuario {string}, contraseña {string}, y clicks en boton login', async function (username: string, password: string) {
+When(/Ingresar usuario\s+['"]?([^'"]+)['"]?, contraseña\s+['"]?([^'"]+)['"]?, y clicks en boton login/, async function (username: string, password: string) {
   await loginPage.ingresUserName(username);
   await loginPage.ingresPassword(password);
   await loginPage.clickBotonLogin();

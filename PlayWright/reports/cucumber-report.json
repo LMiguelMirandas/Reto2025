@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2039328500
+              "duration": 2601663200
             }
           },
           {
@@ -27,185 +27,38 @@
             "keyword": "When ",
             "line": 6,
             "name": "Ingresar usuario standard_user, contraseña secret_sauce, y clicks en boton login",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Verificacion de ingreso a web",
-            "match": {
-              "location": "src\\tests\\step-definition\\login.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Cerrar borwser",
-            "match": {
-              "location": "src\\tests\\step-definition\\login.ts:28"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;validacion-de-login",
-        "keyword": "Scenario Outline",
-        "line": 13,
-        "name": "Validacion de login",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "Ingresa a bowser web",
-            "match": {
-              "location": "src\\tests\\step-definition\\login.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1523131200
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 6,
-            "name": "Ingresar usuario locked_out_user, contraseña secret_sauce, y clicks en boton login",
-            "result": {
-              "status": "undefined",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 7,
-            "name": "Verificacion de ingreso a web",
-            "match": {
-              "location": "src\\tests\\step-definition\\login.ts:25"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 8,
-            "name": "Cerrar borwser",
-            "match": {
-              "location": "src\\tests\\step-definition\\login.ts:28"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          }
-        ],
-        "tags": [],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "login;realizar-compra",
-        "keyword": "Scenario",
-        "line": 15,
-        "name": "Realizar compra",
-        "steps": [
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 16,
-            "name": "Ingresa a bowser web",
-            "match": {
-              "location": "src\\tests\\step-definition\\login.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 1649063299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 17,
-            "name": "Ingresar usuario 'standard_user', contraseña 'secret_sauce', y clicks en boton login",
             "match": {
               "location": "src\\tests\\step-definition\\login.ts:19"
             },
             "result": {
-              "status": "failed",
-              "duration": 73966899,
-              "error_message": "locator.isChecked: Error: Not a checkbox or radio button\nCall log:\n\u001b[2m  - waiting for locator('[data-test=\\'login-button\\']')\u001b[22m\n\n    at LoginPage.clickBotonLogin (D:\\2025\\Automatización\\Playwright\\Reto2025\\PlayWright\\src\\tests\\pages\\login.page.ts:73:41)\n    at World.<anonymous> (D:\\2025\\Automatización\\Playwright\\Reto2025\\PlayWright\\src\\tests\\step-definition\\login.ts:22:19)"
+              "status": "passed",
+              "duration": 636261900
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 18,
+            "line": 7,
             "name": "Verificacion de ingreso a web",
             "match": {
               "location": "src\\tests\\step-definition\\login.ts:25"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 19,
-            "name": "Seleccionar productos y agregarlos al carrito",
-            "match": {
-              "location": "src\\tests\\step-definition\\home.Step.ts:10"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 2023427599
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 20,
-            "name": "Verificar productos en el carrito",
-            "match": {
-              "location": "src\\tests\\step-definition\\home.Step.ts:18"
-            },
-            "result": {
-              "status": "skipped",
-              "duration": 0
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 21,
+            "line": 8,
             "name": "Cerrar borwser",
             "match": {
               "location": "src\\tests\\step-definition\\login.ts:28"
             },
             "result": {
-              "status": "skipped",
-              "duration": 0
+              "status": "passed",
+              "duration": 281032600
             }
           }
         ],
