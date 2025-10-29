@@ -19,7 +19,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2601663200
+              "duration": 1872484899
             }
           },
           {
@@ -28,11 +28,11 @@
             "line": 6,
             "name": "Ingresar usuario standard_user, contraseña secret_sauce, y clicks en boton login",
             "match": {
-              "location": "src\\tests\\step-definition\\login.ts:19"
+              "location": "src\\tests\\step-definition\\login.ts:21"
             },
             "result": {
               "status": "passed",
-              "duration": 636261900
+              "duration": 1147577299
             }
           },
           {
@@ -41,11 +41,11 @@
             "line": 7,
             "name": "Verificacion de ingreso a web",
             "match": {
-              "location": "src\\tests\\step-definition\\login.ts:25"
+              "location": "src\\tests\\step-definition\\login.ts:27"
             },
             "result": {
               "status": "passed",
-              "duration": 2023427599
+              "duration": 2022128300
             }
           },
           {
@@ -54,11 +54,163 @@
             "line": 8,
             "name": "Cerrar borwser",
             "match": {
-              "location": "src\\tests\\step-definition\\login.ts:28"
+              "location": "src\\tests\\step-definition\\login.ts:30"
             },
             "result": {
               "status": "passed",
-              "duration": 281032600
+              "duration": 248587199
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;validacion-de-login",
+        "keyword": "Scenario Outline",
+        "line": 13,
+        "name": "Validacion de login",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "Ingresa a bowser web",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1444968800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "Ingresar usuario locked_out_user, contraseña secret_sauce, y clicks en boton login",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 4489833899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "Verificacion de ingreso a web",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014104299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "Cerrar borwser",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 219980600
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "login;realizar-compra",
+        "keyword": "Scenario",
+        "line": 15,
+        "name": "Realizar compra",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 16,
+            "name": "Ingresa a bowser web",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1766011099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "Ingresar usuario 'standard_user', contraseña 'secret_sauce', y clicks en boton login",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1160643000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "Verificacion de ingreso a web",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:27"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2016770399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 19,
+            "name": "Seleccionar productos y agregarlos al carrito",
+            "match": {
+              "location": "src\\tests\\step-definition\\home.Step.ts:8"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 558578900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "Verificar productos en el carrito",
+            "match": {
+              "location": "src\\tests\\step-definition\\home.Step.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 541769099
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "Cerrar borwser",
+            "match": {
+              "location": "src\\tests\\step-definition\\login.ts:30"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 305940199
             }
           }
         ],

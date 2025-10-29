@@ -12,6 +12,8 @@ let loginPage: LoginPage;
 Given('Ingresa a bowser web', async function ()  {
   browser = await chromium.launch({ headless: false }); // Cambia a true si no quieres ver el navegador
   page = await browser.newPage();
+  (this as any).page = page;
+  (this as any).loginPage = new LoginPage(page);
   loginPage = new LoginPage(page);
   await loginPage.login();
 });

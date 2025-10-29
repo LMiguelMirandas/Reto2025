@@ -23,7 +23,8 @@ constructor(page: Page) {
     // Verificar y hacer clic en el botón de login
     async clickbackpack () {
         try { 
-            if (await this. backpack.isChecked()) {
+            await this.page.waitForTimeout(500);
+            if (await this. backpack.isVisible()) {
                 console.log('🔹 Haciendo clic en el producto backpack...');
                 await this.backpack.click({force:true});
             } else {
@@ -36,7 +37,7 @@ constructor(page: Page) {
     }
     async clickbikeLight () {
         try { 
-            if (await this. bikeLight.isChecked()) {
+            if (await this. bikeLight.isVisible()) {
                 console.log('🔹 Haciendo clic en el producto bikeLight...');
                 await this.bikeLight.click({force:true});
             } else {
@@ -49,7 +50,7 @@ constructor(page: Page) {
     }
     async clickbotShirt () {
         try { 
-            if (await this. botShirt.isChecked()) {
+            if (await this. botShirt.isVisible()) {
                 console.log('🔹 Haciendo clic en el producto botShirt...');
                 await this.botShirt.click({force:true});
             } else {
@@ -62,7 +63,7 @@ constructor(page: Page) {
     }
     async clickfleeceJacket () {
         try { 
-            if (await this. fleeceJacket.isChecked()) {
+            if (await this. fleeceJacket.isVisible()) {
                 console.log('🔹 Haciendo clic en el producto fleeceJacket...');
                 await this.fleeceJacket.click({force:true});
             } else {
@@ -75,7 +76,8 @@ constructor(page: Page) {
     }
     async clickshoppingCartLink () {
         try { 
-            if (await this. shoppingCartLink.isChecked()) {
+            await this.page.waitForTimeout(500);
+            if (await this. shoppingCartLink.isVisible()) {
                 console.log('🔹 Haciendo clic en el carrito de compra...');
                 await this.shoppingCartLink.click({force:true});
             } else {

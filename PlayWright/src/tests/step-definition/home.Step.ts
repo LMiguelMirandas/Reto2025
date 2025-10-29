@@ -3,13 +3,12 @@ import { HomePage } from "../pages/home.page";
 import { Page } from "playwright";
 
 let homePage: HomePage;
-let page: Page; // Asegúrate de obtener la instancia de page
-
-
+let page: Page; 
 
 When('Seleccionar productos y agregarlos al carrito', async function () {
- // Supón que tienes acceso a 'page' desde el contexto o lo recibes de otra forma
-  homePage = new HomePage(this.page);
+  page = (this as any).page;
+  if (!page) throw new Error('Page no inicializado. Asegúrate de crear page en Before hook y asignar this.page = page');
+  homePage = new HomePage(page);
   await homePage.clickbackpack();
   await homePage.clickbikeLight();
   await homePage.clickbotShirt();

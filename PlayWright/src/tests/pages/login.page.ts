@@ -74,8 +74,8 @@ async login(): Promise<void> {
             await this.loginButton.waitFor({ state: 'visible' });
             {
         -    await this.loginButton.waitFor({ state: 'visible' });
-        await this.page.waitForTimeout(500);   
-         await this.loginButton.click();
+                await this.page.waitForTimeout(500);   
+                await this.loginButton.click();
         +    // Espera a que la app termine de navegar/cargar después del login.
         +    // Si conoces la URL o un selector que aparece tras el login, usa waitForURL o waitForSelector en lugar de networkidle.
         +    await this.page.waitForLoadState('networkidle');
@@ -91,7 +91,7 @@ async login(): Promise<void> {
     async verifySwagLabs() {
         try {
             await this.page.waitForTimeout(2000); // Espera adicional para asegurar que la página haya cargado
-            console.log('🔹 Verificando éxito del inicio de sesión texto Hola...');
+            console.log('🔹 Verificando éxito del inicio de sesión texto }');
              await expect(this.page.getByText('Swag Labs')).toBeVisible();
             console.log('✅ Inicio de sesión exitoso.');
         } catch (error) {
