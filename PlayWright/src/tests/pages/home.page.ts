@@ -13,9 +13,9 @@ constructor(page: Page) {
     this.page = page;
 
     this.backpack = page.locator("[data-test='add-to-cart-sauce-labs-backpack']");
-     this.bikeLight = page.locator("[data-test='add-to-cart-sauce-labs-bike-light']");
-     this.botShirt= page.locator("[data-test='add-to-cart-sauce-labs-bolt-t-shirt']");
-     this.fleeceJacket= page.locator("[data-test='add-to-cart-sauce-labs-fleece-jacket']");
+    this.bikeLight = page.locator("[data-test='add-to-cart-sauce-labs-bike-light']");
+    this.botShirt= page.locator("[data-test='add-to-cart-sauce-labs-bolt-t-shirt']");
+    this.fleeceJacket= page.locator("[data-test='add-to-cart-sauce-labs-fleece-jacket']");
     this.shoppingCartLink= page.locator("[data-test='shopping-cart-link']");
      
     }
